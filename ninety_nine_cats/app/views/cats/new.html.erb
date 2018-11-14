@@ -1,31 +1,45 @@
 <form>
   <label>
      Name:
-     <input type="text" name="cat[name]" value="<%= cat.name %>">
+     <input type="text" name="cat[name]" value="<%= @cat.name %>">
      <!-- name defines the format in which we send data back to params -->
    </label>
    <br>
    <label>
      Birth Date:
-     <input type="date" name="cat[birth_date]" value="<%= cat.birth_date %>">
+     <input type="date" name="cat[birth_date]" value="<%= @cat.birth_date %>">
    </label>
    <br>
+   
    <label>
      Color:
-     <input type="text" name="cat[color]" value="<%= cat.color %>">
-   </label>
+   <select class="" name="cat[color]">
+     <option disabled selected>--PLEASE SELECT--</option>
+     <% Cat::COLORS.each do |color| %>
+     <option value="<%= "#{color}" %>"> <%= "#{color}" %> </option>
+     <% end %>
+   </select>
    <br>
+  </label>
+   
+   
+   
+   
+   
    <label>
      Sex:
-     <input type="text" name="cat[sex]" value="<%= cat.sex %>">
+     <br>
+     <input type="radio" name="cat[sex]" value="<%= "M"%>">M<br>
+     <input type="radio" name="cat[sex]" value="<%= "F"%>">F<br>
    </label>
    <br>
    <br>
    <label>
      Description:
-     <input type="text" name="cat[description]" value="<%= cat.description %>">
+     <br>
+     <textarea name="cat[description]" > </textarea>
    </label>
    <br>
-   <input type="submit" value="<%= submit_value %>">
+   <input type="submit" value="submit value">
 </form>
 

@@ -674,3 +674,635 @@ Processing by CatsController#index as HTML
 Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-13 16:45:00 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 57ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2018-11-13 16:45:04 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cat" for 127.0.0.1 at 2018-11-13 16:45:15 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/cat"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cats" for 127.0.0.1 at 2018-11-13 16:45:19 -0800
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (2.4ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:4
+  Rendered cats/index.html.erb within layouts/application (77.6ms)
+Completed 200 OK in 243ms (Views: 120.1ms | ActiveRecord: 37.1ms)
+
+
+Started GET "/cats/1" for 127.0.0.1 at 2018-11-13 16:46:32 -0800
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:10
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 11.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-11-13 16:46:33 -0800
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:4
+  Rendered cats/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/2" for 127.0.0.1 at 2018-11-13 16:46:34 -0800
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCat Load (1.2ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:10
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-11-13 16:46:37 -0800
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:4
+  Rendered cats/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/1" for 127.0.0.1 at 2018-11-13 16:46:43 -0800
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:10
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-11-13 16:46:44 -0800
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:4
+  Rendered cats/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cats/2" for 127.0.0.1 at 2018-11-13 16:46:45 -0800
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:10
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-11-13 16:46:46 -0800
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:4
+  Rendered cats/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cats/2" for 127.0.0.1 at 2018-11-13 16:47:02 -0800
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:10
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cats/2" for 127.0.0.1 at 2018-11-13 16:47:03 -0800
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:10
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cats/2" for 127.0.0.1 at 2018-11-13 16:47:05 -0800
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:10
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-11-13 16:47:06 -0800
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:4
+  Rendered cats/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 16:56:44 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (398.4ms)
+Completed 500 Internal Server Error in 404ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97b220d568>:0x00007f97adad74a0>
+Did you mean?  @cat:
+  app/views/cats/new.html.erb:4:in `_app_views_cats_new_html_erb___2801385752650436684_70144715304700'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/e9b6438939cf556a/variables" for 127.0.0.1 at 2018-11-13 16:56:45 -0800
+Started POST "/__better_errors/e9b6438939cf556a/variables" for 127.0.0.1 at 2018-11-13 16:58:32 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 16:58:53 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (473.4ms)
+Completed 500 Internal Server Error in 541ms (ActiveRecord: 11.7ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97ae4ef668>:0x00007f97ae4edd40>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:4:in `_app_views_cats_new_html_erb___2801385752650436684_70144720594220'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/58fcf4347b4bc12d/variables" for 127.0.0.1 at 2018-11-13 16:58:54 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 16:59:13 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (469.9ms)
+Completed 500 Internal Server Error in 480ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97ae4ef668>:0x00007f97ae42b9e8>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:4:in `_app_views_cats_new_html_erb___2801385752650436684_70144720196320'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/e773c2b20b20205f/variables" for 127.0.0.1 at 2018-11-13 16:59:14 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 16:59:15 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (490.6ms)
+Completed 500 Internal Server Error in 502ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97ae4ef668>:0x00007f97ae261ec8>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:4:in `_app_views_cats_new_html_erb___2801385752650436684_70144719259120'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/f83032f27c5077c8/variables" for 127.0.0.1 at 2018-11-13 16:59:15 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 16:59:37 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (459.5ms)
+Completed 500 Internal Server Error in 519ms (ActiveRecord: 7.4ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97adbefab8>:0x00007f97adbee168>
+Did you mean?  @cat:
+  app/views/cats/new.html.erb:4:in `_app_views_cats_new_html_erb___2801385752650436684_70144715876140'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/2de87be9b04ca3d3/variables" for 127.0.0.1 at 2018-11-13 16:59:38 -0800
+Started POST "/__better_errors/2de87be9b04ca3d3/variables" for 127.0.0.1 at 2018-11-13 16:59:45 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 17:01:19 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (452.6ms)
+Completed 500 Internal Server Error in 465ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97adbefab8>:0x00007f97b1df2708>
+Did you mean?  @cat:
+  app/views/cats/new.html.erb:4:in `_app_views_cats_new_html_erb___2801385752650436684_70144750488060'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/c2796d329925e55c/variables" for 127.0.0.1 at 2018-11-13 17:01:20 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 17:01:40 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (453.6ms)
+Completed 500 Internal Server Error in 464ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97adbefab8>:0x00007f97ae50c970>
+Did you mean?  @cat:
+  app/views/cats/new.html.erb:4:in `_app_views_cats_new_html_erb___2801385752650436684_70144720648580'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/993ea46ce3bcb109/variables" for 127.0.0.1 at 2018-11-13 17:01:41 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 17:01:55 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (458.2ms)
+Completed 500 Internal Server Error in 468ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007f97adbefab8>:0x00007f97b1f8c848>
+Did you mean?  @cat:
+  app/views/cats/new.html.erb:10:in `_app_views_cats_new_html_erb___2801385752650436684_70144751326720'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/9ae5a466d5f7964c/variables" for 127.0.0.1 at 2018-11-13 17:01:56 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 17:02:44 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (463.0ms)
+Completed 500 Internal Server Error in 469ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `submit_value' for #<#<Class:0x00007f97adbefab8>:0x00007f97acd5cdc0>
+Did you mean?  submit_tag:
+  app/views/cats/new.html.erb:29:in `_app_views_cats_new_html_erb___2801385752650436684_70144708213780'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/46a0d72d8d668ea7/variables" for 127.0.0.1 at 2018-11-13 17:02:45 -0800
+Started GET "/cats/new" for 127.0.0.1 at 2018-11-13 17:03:30 -0800
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=&cat%5Bbirth_date%5D=&cat%5Bcolor%5D=&cat%5Bsex%5D=&cat%5Bdescription%5D=" for 127.0.0.1 at 2018-11-13 17:03:34 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"", "birth_date"=>"", "color"=>"", "sex"=>"", "description"=>""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=gregrq&cat%5Bbirth_date%5D=2010-01-13&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=F&cat%5Bdescription%5D=ht4wht4wh4w" for 127.0.0.1 at 2018-11-13 17:04:19 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"gregrq", "birth_date"=>"2010-01-13", "color"=>"Adi", "sex"=>"F", "description"=>"ht4wht4wh4w"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=&cat%5Bbirth_date%5D=&cat%5Bcolor%5D=&cat%5Bsex%5D=&cat%5Bdescription%5D=" for 127.0.0.1 at 2018-11-13 17:04:24 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"", "birth_date"=>"", "color"=>"", "sex"=>"", "description"=>""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=&cat%5Bbirth_date%5D=&cat%5Bcolor%5D=&cat%5Bsex%5D=&cat%5Bdescription%5D=" for 127.0.0.1 at 2018-11-13 17:04:51 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"", "birth_date"=>"", "color"=>"", "sex"=>"", "description"=>""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:05:17 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:09:27 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:10:03 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:10:16 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:12:11 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:15:15 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:15:30 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:25:08 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (80.3ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant Cat::COLOR:
+  app/views/cats/new.html.erb:22:in `_app_views_cats_new_html_erb___2801385752650436684_70144720218320'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/3107bdb639a02e93/variables" for 127.0.0.1 at 2018-11-13 17:25:09 -0800
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:25:33 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (25.1ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ActionView::CompiledTemplates::COLOR:
+  app/views/cats/new.html.erb:22:in `_app_views_cats_new_html_erb___2801385752650436684_70144716171400'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/b867fd16296fdb2a/variables" for 127.0.0.1 at 2018-11-13 17:25:33 -0800
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:25:33 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ActionView::CompiledTemplates::COLOR:
+  app/views/cats/new.html.erb:22:in `_app_views_cats_new_html_erb___2801385752650436684_70144751098700'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/75bda2a69278434a/variables" for 127.0.0.1 at 2018-11-13 17:25:33 -0800
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:25:49 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ActionView::CompiledTemplates::COLORS:
+  app/views/cats/new.html.erb:22:in `_app_views_cats_new_html_erb___2801385752650436684_70144753764940'
+  app/controllers/cats_controller.rb:16:in `new'
+
+Started POST "/__better_errors/893e96ed955883aa/variables" for 127.0.0.1 at 2018-11-13 17:25:49 -0800
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:26:02 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:26:48 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=grejytmhtd&cat%5Bbirth_date%5D=2018-08-01&cat%5Bcolor%5D=Adi&cat%5Bsex%5D=M&cat%5Bdescription%5D=gefqbefew" for 127.0.0.1 at 2018-11-13 17:27:46 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"grejytmhtd", "birth_date"=>"2018-08-01", "color"=>"Adi", "sex"=>"M", "description"=>"gefqbefew"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=fvwv&cat%5Bbirth_date%5D=2018-11-05&Cat%3A%3ACOLORS=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wwev" for 127.0.0.1 at 2018-11-13 17:28:02 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"fvwv", "birth_date"=>"2018-11-05", "sex"=>"M", "description"=>" wwev"}, "Cat::COLORS"=>"Blood Red"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=fvwv&cat%5Bbirth_date%5D=2018-11-05&Cat%3A%3ACOLORS=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wwev" for 127.0.0.1 at 2018-11-13 17:28:49 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"fvwv", "birth_date"=>"2018-11-05", "sex"=>"M", "description"=>" wwev"}, "Cat::COLORS"=>"Blood Red"}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=dvs&cat%5Bbirth_date%5D=2018-11-05&Cat%5Bcolor%5D=Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+qevewvew" for 127.0.0.1 at 2018-11-13 17:28:59 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"dvs", "birth_date"=>"2018-11-05", "sex"=>"M", "description"=>" qevewvew"}, "Cat"=>{"color"=>"Red"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=dvs&cat%5Bbirth_date%5D=2018-11-05&Cat%5Bcolor%5D=Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+qevewvew" for 127.0.0.1 at 2018-11-13 17:29:27 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"dvs", "birth_date"=>"2018-11-05", "sex"=>"M", "description"=>" qevewvew"}, "Cat"=>{"color"=>"Red"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=wveqw&cat%5Bbirth_date%5D=2018-11-06&cat%5Bcolor%5D=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wrbwbrbe" for 127.0.0.1 at 2018-11-13 17:29:36 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"wveqw", "birth_date"=>"2018-11-06", "color"=>"Blood Red", "sex"=>"M", "description"=>" wrbwbrbe"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=wveqw&cat%5Bbirth_date%5D=2018-11-06&cat%5Bcolor%5D=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wrbwbrbe" for 127.0.0.1 at 2018-11-13 17:31:35 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"wveqw", "birth_date"=>"2018-11-06", "color"=>"Blood Red", "sex"=>"M", "description"=>" wrbwbrbe"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=wveqw&cat%5Bbirth_date%5D=2018-11-06&cat%5Bcolor%5D=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wrbwbrbe" for 127.0.0.1 at 2018-11-13 17:32:10 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"wveqw", "birth_date"=>"2018-11-06", "color"=>"Blood Red", "sex"=>"M", "description"=>" wrbwbrbe"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=wveqw&cat%5Bbirth_date%5D=2018-11-06&cat%5Bcolor%5D=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wrbwbrbe" for 127.0.0.1 at 2018-11-13 17:32:58 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"wveqw", "birth_date"=>"2018-11-06", "color"=>"Blood Red", "sex"=>"M", "description"=>" wrbwbrbe"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=wveqw&cat%5Bbirth_date%5D=2018-11-06&cat%5Bcolor%5D=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wrbwbrbe" for 127.0.0.1 at 2018-11-13 17:34:55 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"wveqw", "birth_date"=>"2018-11-06", "color"=>"Blood Red", "sex"=>"M", "description"=>" wrbwbrbe"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 41ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=wveqw&cat%5Bbirth_date%5D=2018-11-06&cat%5Bcolor%5D=Blood+Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+wrbwbrbe" for 127.0.0.1 at 2018-11-13 17:35:18 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"wveqw", "birth_date"=>"2018-11-06", "color"=>"Blood Red", "sex"=>"M", "description"=>" wrbwbrbe"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=gggggggg&cat%5Bbirth_date%5D=2018-11-05&cat%5Bcolor%5D=Red&cat%5Bsex%5D=&cat%5Bdescription%5D=+vfeabfeab" for 127.0.0.1 at 2018-11-13 17:35:45 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"gggggggg", "birth_date"=>"2018-11-05", "color"=>"Red", "sex"=>"", "description"=>" vfeabfeab"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=gggggggg&cat%5Bbirth_date%5D=2018-11-05&cat%5Bcolor%5D=Red&cat%5Bsex%5D=&cat%5Bdescription%5D=+vfeabfeab" for 127.0.0.1 at 2018-11-13 17:36:36 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"gggggggg", "birth_date"=>"2018-11-05", "color"=>"Red", "sex"=>"", "description"=>" vfeabfeab"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=frwngwrn&cat%5Bbirth_date%5D=2018-11-01&cat%5Bcolor%5D=Calico&cat%5Bsex%5D=&cat%5Bdescription%5D=+ntrwngnrws" for 127.0.0.1 at 2018-11-13 17:36:54 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"frwngwrn", "birth_date"=>"2018-11-01", "color"=>"Calico", "sex"=>"", "description"=>" ntrwngnrws"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=frwngwrn&cat%5Bbirth_date%5D=2018-11-01&cat%5Bcolor%5D=Calico&cat%5Bsex%5D=&cat%5Bdescription%5D=+ntrwngnrws" for 127.0.0.1 at 2018-11-13 17:37:30 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"frwngwrn", "birth_date"=>"2018-11-01", "color"=>"Calico", "sex"=>"", "description"=>" ntrwngnrws"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=htynye5n&cat%5Bbirth_date%5D=2018-11-01&cat%5Bcolor%5D=Calico&cat%5Bsex%5D=M&cat%5Bdescription%5D=+bgrwnwn" for 127.0.0.1 at 2018-11-13 17:37:41 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"htynye5n", "birth_date"=>"2018-11-01", "color"=>"Calico", "sex"=>"M", "description"=>" bgrwnwn"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=htynye5n&cat%5Bbirth_date%5D=2018-11-01&cat%5Bcolor%5D=Calico&cat%5Bsex%5D=M&cat%5Bdescription%5D=+bgrwnwn" for 127.0.0.1 at 2018-11-13 17:40:00 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"htynye5n", "birth_date"=>"2018-11-01", "color"=>"Calico", "sex"=>"M", "description"=>" bgrwnwn"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new?cat%5Bname%5D=bbtrnt42bn24&cat%5Bbirth_date%5D=2018-11-06&cat%5Bcolor%5D=Red&cat%5Bsex%5D=M&cat%5Bdescription%5D=+rrrrrrrrr" for 127.0.0.1 at 2018-11-13 17:40:09 -0800
+Processing by CatsController#new as HTML
+  Parameters: {"cat"=>{"name"=>"bbtrnt42bn24", "birth_date"=>"2018-11-06", "color"=>"Red", "sex"=>"M", "description"=>" rrrrrrrrr"}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
