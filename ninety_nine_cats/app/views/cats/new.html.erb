@@ -1,0 +1,31 @@
+<form>
+  <label>
+     Name:
+     <input type="text" name="cat[name]" value="<%= cat.name %>">
+     <!-- name defines the format in which we send data back to params -->
+   </label>
+   <br>
+   <label>
+     Birth Date:
+     <input type="date" name="cat[birth_date]" value="<%= cat.birth_date %>">
+   </label>
+   <br>
+   <label>
+     Color:
+     <input type="text" name="cat[color]" value="<%= cat.color %>">
+   </label>
+   <br>
+   <label>
+     Sex:
+     <input type="text" name="cat[sex]" value="<%= cat.sex %>">
+   </label>
+   <br>
+   <br>
+   <label>
+     Description:
+     <input type="text" name="cat[description]" value="<%= cat.description %>">
+   </label>
+   <br>
+   <input type="submit" value="<%= submit_value %>">
+</form>
+

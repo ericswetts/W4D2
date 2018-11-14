@@ -11,7 +11,7 @@ class Cat < ApplicationRecord
   validates :color, inclusion: { in: COLORS }
   
   def age
-    Time.now - self.birth_date
+    ((Time.now.to_date - self.birth_date) / 365.25).floor
   end
   
   
